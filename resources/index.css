@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Tahoma", "Oswald", serif;
+  font-size: 15px;
+  background: #f3f5f8;
+  color: #000000;
+}
+
+body {
+  height: 100vh;
+
+  background-image:
+      linear-gradient(to right top, rgba(48, 98, 213, 0.92), rgba(0, 120, 217, 0.92),
+      rgba(0, 137, 208, 0.92), rgba(0, 150, 194, 0.92), rgba(0, 160, 178, 0.92), rgba(0, 165, 169, 0.92),
+      rgba(0, 168, 155, 0.92), rgba(0, 171, 138, 0.92), rgba(0, 172, 124, 0.92), rgba(0, 172, 107, 0.92),
+      rgba(10, 171, 88, 0.92), rgba(38, 170, 66, 0.92));
+
+  padding-top: 200px;
+}
+
+h1 {
+  font-family: "Oswald", serif;
+  font-size: 55px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Abel", serif;
+  font-size: 30px;
+  color: #f2f2f2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.form {
+  widht: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 500px;
+}
+
+select {
+  background: #51abf8;
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+  border: 0;
+  outline: none;
+  transition: filter 0.1s ease, background-color 0.2s ease 0s;
+  cursor: pointer;
+  text-align-last:center;
+}
+
+select option {
+  font-size: 20px;
+  text-align-last: center;
+}
+
+input {
+  background: #ffffff;
+  font-family: Sans-serif;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  transition: filter 0.1s ease, background-color 0.2s ease 0s;
+}
+
+button {
+  background: #428BCA;
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  transition: filter 0.1s ease, background-color 0.2s ease 0s;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #CF4647;
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
+}

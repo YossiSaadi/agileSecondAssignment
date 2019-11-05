@@ -1,0 +1,171 @@
+{
+  "teams": [
+    {
+      "id": "1",
+      "name": "Barcelona"
+    },
+    {
+      "id": "2",
+      "name": "Real Madrid"
+    },
+    {
+      "id": "3",
+      "name": "Liverpool"
+    },
+    {
+      "id": "4",
+      "name": "Manchester City"
+    },
+    {
+      "id": "5",
+      "name": "Ajax"
+    },
+    {
+      "id": "6",
+      "name": "Juventus"
+    },
+    {
+      "id": "7",
+      "name": "Bayern Munich"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "1",
+      "name": "La Liga"
+    },
+    {
+      "id": "2",
+      "name": "Premier League"
+    },
+    {
+      "id": "2",
+      "name": "Champions League"
+    }
+  ],
+  "matches": [
+    {
+      "status": "Played",
+      "team": [
+        "1",
+        "2"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 1
+      },
+      "kickoff_time": {
+        "hour": 21,
+        "minutes": 20
+      },
+      "tournament": 1,
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "status": "Played",
+      "team": [
+        "1",
+        "7"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 4
+      },
+      "kickoff_time": {
+        "hour": 20,
+        "minutes": 40
+      },
+      "tournament": 3,
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "status": "Played",
+      "team": [
+        "3",
+        "6"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 6
+      },
+      "kickoff_time": {
+        "hour": 17,
+        "minutes": 20
+      },
+      "tournament": 3,
+      "score": [
+        0,
+        7
+      ]
+    },
+    {
+      "status": "Upcoming",
+      "team": [
+        "2",
+        "5"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 12
+      },
+      "kickoff_time": {
+        "hour": 20,
+        "minutes": 10
+      },
+      "tournament": 3,
+      "score": [
+        null
+      ]
+    },
+    {
+      "status": "Upcoming",
+      "team": [
+        "3",
+        "4"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 14
+      },
+      "kickoff_time": {
+        "hour": 18,
+        "minutes": 50
+      },
+      "tournament": 2,
+      "score": [
+        null
+      ]
+    },
+    {
+      "status": "Upcoming",
+      "team": [
+        "5",
+        "6"
+      ],
+      "start_date": {
+        "year": 2019,
+        "month": 11,
+        "day": 17
+      },
+      "kickoff_time": {
+        "hour": 21,
+        "minutes": 30
+      },
+      "tournament": 3,
+      "score": [
+        null
+      ]
+    }
+  ]
+}

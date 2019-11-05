@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Assignment 2 - Agile</title>
+    <link rel="stylesheet" href="/resources/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Abel|Lato|Nanum+Gothic|Open+Sans+Condensed:300|Roboto&display=swap">
+  </head>
+
+  <body>
+    <h1>Agile - 2nd assignment - Football API</h1>
+
+    <h2>List of APIs</h2>
+
+    <ul>
+      <li>GET /team/:teamId gives you a list of matches of a team by its id</li>
+      <li>GET /team/:teamId/:status gives you a list of matches of a team by its id and status</li>
+      <li>GET /tournament/:tournamentId gives you a list of matches of a tournament by its id</li>
+      <li>GET /tournament/:tournamentId/:status gives you a list of matches of a tournament by its id and status</li>
+    </ul>
+
+    <div class="form">
+      <select name="type">
+        <option value="team">Team</option>
+        <option value="tournament">Tournament</option>
+      </select>
+      <input placeholder="Enter ID"/>
+      <button>GET</button>
+    </div>
+
+  </body>
+</html>

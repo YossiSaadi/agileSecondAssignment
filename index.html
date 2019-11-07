@@ -5,6 +5,8 @@
     <title>Assignment 2 - Agile</title>
     <link rel="stylesheet" href="/resources/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro|Abel|Lato|Nanum+Gothic|Open+Sans+Condensed:300|Roboto&display=swap">
+    <script src="src/client/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -20,13 +22,19 @@
     </ul>
 
     <div class="form">
-      <select name="type">
+      <select id="type" name="type">
         <option value="team">Team</option>
         <option value="tournament">Tournament</option>
       </select>
-      <input placeholder="Enter ID"/>
-      <button>GET</button>
+      <input id="id" placeholder="Enter ID"/>
+      <select id="status" name="status">
+        <option value="all">All</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="played">Played</option>
+      </select>
+      <button onclick="onButtonClick()">GET</button>
     </div>
-
+    <div id="response">
+    </div>
   </body>
 </html>

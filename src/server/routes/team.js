@@ -1,12 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const { matches } = require('../../../App');
+const { matches } = require("../../../resources/dataset.json");
 
 router.get('/:teamId', (req, res) => {
   try {
-    const { params } = req;
-    const { teamId } = params;
+    const { teamId } = req.params;
 
     const teamMatches = matches.filter(({ team }) => team.includes(teamId));
 
@@ -22,8 +21,7 @@ router.get('/:teamId', (req, res) => {
 
 router.get('/:teamId/:matchStatus', (req, res) => {
   try {
-    const { params } = req;
-    const { teamId, matchStatus } = params;
+    const { teamId, matchStatus } = req.params;
 
     const teamMatches = matches.filter(({ team, status }) => team.includes(teamId) && status === matchStatus);
 

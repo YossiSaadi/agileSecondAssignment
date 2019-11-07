@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/tournament/:tournamentId', (req, res) => {
+const { matches } = require("../../../resources/dataset.json");
+
+router.get('/:tournamentId', (req, res) => {
   try {
-    const { params } = req;
-    const { tournamentId } = params;
+    const { tournamentId } = req.params;
 
     const tournamentMatches = matches.filter(({ tournament }) => tournament.includes(tournamentId));
 
@@ -18,10 +19,9 @@ router.get('/tournament/:tournamentId', (req, res) => {
   }
 });
 
-router.get('/tournament/:tournamentId/:matchStatus', (req, res) => {
+router.get('/:tournamentId/:matchStatus', (req, res) => {
   try {
-    const { params } = req;
-    const { tournamentId, matchStatus } = params;
+    const { tournamentId, matchStatus } = req.params;
 
     const tournamentMatches = matches.filter(({ tournament, status }) => tournament.includes(tournamentId) && status === matchStatus);
 

@@ -9,11 +9,11 @@ html {
   font-size: 15px;
   background: #f3f5f8;
   color: #000000;
+  height: 90vw;
 }
 
 body {
-  height: 100vh;
-
+  height: 100%;
   background-image:
       linear-gradient(to right top, rgba(48, 98, 213, 0.92), rgba(0, 120, 217, 0.92),
       rgba(0, 137, 208, 0.92), rgba(0, 150, 194, 0.92), rgba(0, 160, 178, 0.92), rgba(0, 165, 169, 0.92),
@@ -52,7 +52,6 @@ ul li {
 }
 
 .form {
-  widht: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,7 +62,7 @@ ul li {
 select {
   background: #51abf8;
   color: #fff;
-  font-family: Sans-serif;
+  font-family: Sans-serif, serif;
   font-size: 20px;
   height: 40px;
   width: 200px;
@@ -84,7 +83,7 @@ select option {
 
 input {
   background: #ffffff;
-  font-family: Sans-serif;
+  font-family: Sans-serif, serif;
   font-size: 20px;
   height: 40px;
   width: 200px;
@@ -97,7 +96,7 @@ input {
 button {
   background: #428BCA;
   color: #fff;
-  font-family: Sans-serif;
+  font-family: Sans-serif, serif;
   font-size: 20px;
   height: 40px;
   width: 100px;
@@ -111,4 +110,11 @@ button {
 button:hover {
   background: #CF4647;
   filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.response {
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 50px auto auto;
 }

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { matches } = require("../../../resources/dataset.json");
+const { matches } = require('../../../resources/dataset.json');
 
 router.get('/:teamId', (req, res) => {
   try {
